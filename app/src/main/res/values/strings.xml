@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PemrogrammanMobileUnsika</string>
+    <string name="tombol_satu">Menu Satu</string>
+    <string name="tombol_activity_dua">Menu Dua</string>
+    <string name="tombol_activity_tiga">Menu Tiga</string>
+    <string name="npm">NPM : </string>
+    <string name="nama">Nama : </string>
+    <string name="jk">Jenis Kelamin : </string>
+    <string name="no_tlp">No Telp : </string>
+    <string name="prodi">Prodi : </string>
+    <string name="hobi">Hobi : </string>
+    <string name="laki_laki">Laki - Laki</string>
+    <string name="perempuan">Perempuan</string>
+
+    <string-array name="daftar_prodi">
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+    </string-array>
+
+    <string name="membaca">Membaca Buku</string>
+    <string name="belajar">Belajar Pemrograman</string>
+    <string name="btn_proses">Proses</string>
+
+    <string name="mk1">Mata Kuliah 1</string>
+    <string name="mk1_name">Nama MK 1</string>
+    <string name="mk1_value">Nilai MK 1</string>
+
+    <string name="mk2">Mata Kuliah 2</string>
+    <string name="mk2_name">Nama MK 2</string>
+    <string name="mk2_value">Nilai MK 2</string>
+
+    <string name="mk3">Mata Kuliah 3</string>
+    <string name="mk3_name">Nama MK 3</string>
+    <string name="mk3_value">Nilai MK 3</string>
+
+    <string name="mk4">Mata Kuliah 4</string>
+    <string name="mk4_name">Nama MK 4</string>
+    <string name="mk4_value">Nilai MK 4</string>
+
+    <string name="mk5">Mata Kuliah 5</string>
+    <string name="mk5_name">Nama MK 5</string>
+    <string name="mk5_value">Nilai MK 5</string>
+
+</resources>

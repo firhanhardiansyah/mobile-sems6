@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_satu"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Menu data mahasiswa 1"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_dua"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Menu data mahasiswa 2"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_tiga"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Menu data mahasiswa 3"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_empat"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Menu data mahasiswa 1"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/sub_menu_empat"
+                android:title="Sub menu mahasiswa 4" />
+            <item
+                android:id="@+id/sub_menu_empat2"
+                android:title="Sub menu mahasiswa 4 ke 2" />
+        </menu>
+    </item>
+</menu>
