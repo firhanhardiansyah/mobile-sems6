@@ -3,12 +3,12 @@
     <string name="tombol_satu">Menu Satu</string>
     <string name="tombol_activity_dua">Menu Dua</string>
     <string name="tombol_activity_tiga">Menu Tiga</string>
-    <string name="npm">NPM : </string>
-    <string name="nama">Nama : </string>
-    <string name="jk">Jenis Kelamin : </string>
-    <string name="no_tlp">No Telp : </string>
-    <string name="prodi">Prodi : </string>
-    <string name="hobi">Hobi : </string>
+    <string name="tombol_activity_uts">Menu UTS</string>
+    <string name="npm">NPM</string>
+    <string name="nama">Nama</string>
+    <string name="no_tlp">No Telp</string>
+    <string name="prodi">Prodi</string>
+    <string name="jk">Jenis Kelamin</string>
     <string name="laki_laki">Laki - Laki</string>
     <string name="perempuan">Perempuan</string>
 
@@ -17,9 +17,14 @@
         <item>Sistem Informasi</item>
     </string-array>
 
+    <string name="hobi">Hobi</string>
     <string name="membaca">Membaca Buku</string>
     <string name="belajar">Belajar Pemrograman</string>
     <string name="btn_proses">Proses</string>
+
+    <string name="olahraga">Olahraga</string>
+    <string name="jln_jln">Jalan - Jalan</string>
+    <string name="belanja">Belanja</string>
 
     <string name="mk1">Mata Kuliah 1</string>
     <string name="mk1_name">Nama MK 1</string>
@@ -40,5 +45,18 @@
     <string name="mk5">Mata Kuliah 5</string>
     <string name="mk5_name">Nama MK 5</string>
     <string name="mk5_value">Nilai MK 5</string>
+
+    <string name="nama_karyawan">Nama Karyawan</string>
+    <string name="hint_nama_karyawan">Masukan Nama Karyawan...</string>
+    <string name="umur_karyawan">Umur</string>
+    <string name="hint_umur_karyawan">Masukan Umur Karyawan...</string>
+
+    <string name="masa_kerja">Masa Kerja</string>
+
+    <string-array name="masa_kerja">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
 
 </resources>

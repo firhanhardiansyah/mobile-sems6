@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val textSatu            = findViewById<TextView>(R.id.text_satu)
         val tombolActivityDua   = findViewById<Button>(R.id.tombol_activity_dua)
         val tombolActivityTiga  = findViewById<Button>(R.id.tombol_activity_tiga)
+        val btnActivityTiga     = findViewById<Button>(R.id.btn_activity_uts)
 
         tombolSatu.setOnClickListener {
             Toast.makeText(this, "Ini proses dari klik tombol", Toast.LENGTH_LONG).show()
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         tombolActivityTiga.setOnClickListener {
             startActivity(Intent(this, ActivityTiga::class.java))
+        }
+
+        btnActivityTiga.setOnClickListener {
+            startActivity(Intent(this, ActivityUts::class.java))
         }
     }
 

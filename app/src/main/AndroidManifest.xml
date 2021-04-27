@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PemrogrammanMobileUnsika">
         <activity
-            android:name=".ActivityTiga"
-            android:parentActivityName=".MainActivity"/>
-        <activity
             android:name=".ActivityDua"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityTiga"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityUts"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

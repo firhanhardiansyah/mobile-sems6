@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityUts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dip">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:padding="10px"
+                android:text="@string/nama_karyawan" />
+
+            <EditText
+                android:id="@+id/nama_karyawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_nama_karyawan"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:padding="10px"
+                android:text="@string/umur_karyawan" />
+
+            <EditText
+                android:id="@+id/umur_karyawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_umur_karyawan"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="@string/jk" />
+
+            <RadioGroup
+                android:id="@+id/rb_group_jk_karyawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_laki_laki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/laki_laki" />
+
+                <RadioButton
+                    android:id="@+id/rb_perempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/perempuan" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="@string/masa_kerja" />
+            <Spinner
+                android:id="@+id/cmb_masa_kerja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/masa_kerja" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="@string/hobi" />
+            <CheckBox
+                android:id="@+id/hobi_olahraga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/olahraga" />
+
+            <CheckBox
+                android:id="@+id/hobi_membaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/membaca" />
+
+            <CheckBox
+                android:id="@+id/hobi_jln_jln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jln_jln" />
+
+            <CheckBox
+                android:id="@+id/hobi_belanja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/belanja" />
+
+            <Button
+                android:id="@+id/btn_proses_uts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_proses"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
