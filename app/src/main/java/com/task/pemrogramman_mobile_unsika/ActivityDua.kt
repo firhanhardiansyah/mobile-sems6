@@ -3,6 +3,11 @@ package com.task.pemrogramman_mobile_unsika
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import org.json.JSONObject
 
 class ActivityDua : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +32,6 @@ class ActivityDua : AppCompatActivity() {
     val rbGroupJk     = findViewById<RadioGroup>(R.id.rb_group_jk)
 
     val btnProses     = findViewById<Button>(R.id.btn_proses)
-    val txtHasil      = findViewById<TextView>(R.id.txt_hasil_proses)
 
     rbGroupJk.setOnCheckedChangeListener { group, checkedId ->
       if (checkedId == R.id.r_laki_laki) {
@@ -48,14 +52,39 @@ class ActivityDua : AppCompatActivity() {
         hobi = hobi2.text.toString()
       }
 
-      Toast.makeText(this, "Selesai", Toast.LENGTH_SHORT).show()
+      if (
+        npm.text.toString() != "" &&
+        nama.text.toString() != "" &&
+        jenisKelamin != "" &&
+        prodi.selectedItem.toString() != "" &&
+        hobi != ""
+      ) {
+        val queue = Volley.newRequestQueue(this)
+        val domain    = ""
+        val base_url  = "${domain}/p-mobile-api/?params="
+        val url       = "${base_url}mhs_create&npm=${npm.text}&nama=${nama.text}&jenis_kelamin=${jenisKelamin}&prodi=${prodi.selectedItem}&hobi=${hobi}"
 
-      txtHasil.text =
-        "Npm  : " + npm.text + "\n" +
-        "Nama : " + nama.text + "\n" +
-        "Jenis Kelamin : " + jenisKelamin + "\n" +
-        "Prodi : " + prodi.selectedItem.toString() + "\n" +
-        "Hobi : " + hobi + "\n"
+        val stringRequest = StringRequest(
+          Request.Method.GET, url,
+          Response.Listener<String> { response ->
+            val obj = JSONObject(response)
+            Toast.makeText(this, "Response is: ${obj.getString("message")}", Toast.LENGTH_SHORT).show()
+
+            npm.text.fo
+            npm.text.clear()
+            nama.text.clear()
+            jk_laki.isChecked = false
+            jk_perempuan.isChecked = false
+            hobi1.isChecked = false
+            hobi2.isChecked = false
+          },
+          Response.ErrorListener {
+            Toast.makeText(this, "That didn't work!", Toast.LENGTH_SHORT).show()
+          })
+
+        queue.add(stringRequest)
+      }
+
     }
   }
 }
