@@ -60,7 +60,7 @@ class ActivityDua : AppCompatActivity() {
         hobi != ""
       ) {
         val queue = Volley.newRequestQueue(this)
-        val domain    = ""
+        val domain    = "Enter your domain/ip address"
         val base_url  = "${domain}/p-mobile-api/?params="
         val url       = "${base_url}mhs_create&npm=${npm.text}&nama=${nama.text}&jenis_kelamin=${jenisKelamin}&prodi=${prodi.selectedItem}&hobi=${hobi}"
 
@@ -70,7 +70,7 @@ class ActivityDua : AppCompatActivity() {
             val obj = JSONObject(response)
             Toast.makeText(this, "Response is: ${obj.getString("message")}", Toast.LENGTH_SHORT).show()
 
-            npm.text.fo
+            npm.text.clear()
             npm.text.clear()
             nama.text.clear()
             jk_laki.isChecked = false

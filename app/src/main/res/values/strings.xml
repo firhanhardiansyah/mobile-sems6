@@ -4,6 +4,7 @@
     <string name="tombol_activity_dua">Menu Dua</string>
     <string name="tombol_activity_tiga">Menu Tiga</string>
     <string name="tombol_activity_uts">Menu UTS</string>
+    <string name="tombol_activity_list_mahasiswa">List Mahasiswa</string>
     <string name="npm">NPM</string>
     <string name="nama">Nama</string>
     <string name="no_tlp">No Telp</string>
