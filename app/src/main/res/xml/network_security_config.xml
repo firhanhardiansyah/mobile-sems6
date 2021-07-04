@@ -3,7 +3,7 @@
     <domain-config cleartextTrafficPermitted="true"
         tools:ignore="NetworkSecurityConfig">
         <domain includeSubdomains="true">
-            Enter your domain/ip address
+            https://hanzdeveloper.000webhostapp.com
         </domain>
     </domain-config>
 

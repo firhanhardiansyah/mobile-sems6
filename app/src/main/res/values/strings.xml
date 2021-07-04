@@ -22,6 +22,8 @@
     <string name="membaca">Membaca Buku</string>
     <string name="belajar">Belajar Pemrograman</string>
     <string name="btn_proses">Proses</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
 
     <string name="olahraga">Olahraga</string>
     <string name="jln_jln">Jalan - Jalan</string>
@@ -59,5 +61,6 @@
         <item>10</item>
         <item>20</item>
     </string-array>
+    <string name="title_activity_u_d__mahasiswa">UD_Mahasiswa</string>
 
 </resources>

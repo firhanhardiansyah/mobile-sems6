@@ -1,5 +1,6 @@
 package com.task.pemrogramman_mobile_unsika
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -60,8 +61,8 @@ class ActivityDua : AppCompatActivity() {
         hobi != ""
       ) {
         val queue = Volley.newRequestQueue(this)
-        val domain    = "Enter your domain/ip address"
-        val base_url  = "${domain}/p-mobile-api/?params="
+        val domain    = "https://hanzdeveloper.000webhostapp.com"
+        val base_url  = "${domain}?params="
         val url       = "${base_url}mhs_create&npm=${npm.text}&nama=${nama.text}&jenis_kelamin=${jenisKelamin}&prodi=${prodi.selectedItem}&hobi=${hobi}"
 
         val stringRequest = StringRequest(
