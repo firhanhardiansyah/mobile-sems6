@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val tombolSatu          = findViewById<Button>(R.id.tombol_satu)
-        val textSatu            = findViewById<TextView>(R.id.text_satu)
+        val textSatu          = findViewById<TextView>(R.id.text_satu)
         val tombolActivityDua   = findViewById<Button>(R.id.tombol_activity_dua)
         val tombolActivityTiga  = findViewById<Button>(R.id.tombol_activity_tiga)
         val btnActivityTiga     = findViewById<Button>(R.id.btn_activity_uts)

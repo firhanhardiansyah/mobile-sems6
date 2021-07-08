@@ -1,6 +1,5 @@
 package com.task.pemrogramman_mobile_unsika
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -11,6 +10,9 @@ import com.android.volley.toolbox.Volley
 import org.json.JSONObject
 
 class ActivityDua : AppCompatActivity() {
+
+  private val env = Environment()
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_dua)
@@ -61,15 +63,13 @@ class ActivityDua : AppCompatActivity() {
         hobi != ""
       ) {
         val queue = Volley.newRequestQueue(this)
-        val domain    = "https://hanzdeveloper.000webhostapp.com"
-        val base_url  = "${domain}?params="
-        val url       = "${base_url}mhs_create&npm=${npm.text}&nama=${nama.text}&jenis_kelamin=${jenisKelamin}&prodi=${prodi.selectedItem}&hobi=${hobi}"
+        val url       = "${env.url}?params=mhs_create&npm=${npm.text}&nama=${nama.text}&jenis_kelamin=${jenisKelamin}&prodi=${prodi.selectedItem}&hobi=${hobi}"
 
         val stringRequest = StringRequest(
           Request.Method.GET, url,
           Response.Listener<String> { response ->
             val obj = JSONObject(response)
-            Toast.makeText(this, "Response is: ${obj.getString("message")}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, obj.getString("message"), Toast.LENGTH_SHORT).show()
 
             npm.text.clear()
             npm.text.clear()

@@ -1,3 +1,4 @@
+
 package com.task.pemrogramman_mobile_unsika
 
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,9 @@ import android.R.layout.simple_list_item_1
 import android.content.Intent
 
 class ListMahasiswa : AppCompatActivity() {
+
+  private val env = Environment()
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_list_mahasiswa)
@@ -27,8 +31,7 @@ class ListMahasiswa : AppCompatActivity() {
 
   fun getMahasiswa() {
     val queue = Volley.newRequestQueue(this)
-    val domain: String = "https://hanzdeveloper.000webhostapp.com"
-    val url: String = "${domain}?params=mhs_view"
+    val url: String = "${env.url}?params=mhs_view"
     val req = StringRequest(
       Request.Method.GET, url,
       Response.Listener <String>{

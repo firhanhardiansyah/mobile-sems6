@@ -35,13 +35,15 @@ class ActivityTiga : AppCompatActivity() {
     val btnProsesMK = findViewById<Button>(R.id.btnProsesMk)
 
     btnProsesMK.setOnClickListener {
-      resultMK.setText(
-        namaMK1.text.toString() + " : " + nilaiMK1.text + "\n" +
-        namaMK2.text.toString() + " : " + nilaiMK2.text + "\n" +
-        namaMK3.text.toString() + " : " + nilaiMK3.text + "\n" +
-        namaMK4.text.toString() + " : " + nilaiMK4.text + "\n" +
-        namaMK5.text.toString() + " : " + nilaiMK5.text + "\n"
-      )
+      var info: String = """
+          |${namaMK1.text} : ${nilaiMK1.text}
+          |${namaMK2.text} : ${nilaiMK2.text}
+          |${namaMK3.text} : ${nilaiMK3.text}
+          |${namaMK4.text} : ${nilaiMK4.text}
+          |${namaMK5.text} : ${nilaiMK5.text}
+      """.trimMargin()
+
+      resultMK.setText(info)
     }
 
 
